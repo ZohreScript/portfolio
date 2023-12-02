@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume maker</title>
+    <link rel="stylesheet" href="css/stylehome.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body >
+
+<header class="headerhome" >
+    <h1>Portfolio maker</h1>
+    <section class="menu-home">
+        <ul class="menu-list-home">
+            <li class="active-home"> <a href="index.html">home </a></li>
+            <li id="loginbtn" onclick="login()" > <a href="Login.html">login </a></li>
+            <li id="registerbtn" onclick="register()"> <a href="Login.html"> signup</a></li>
+        </ul>
+
+        <button>
+            <i class="fas fa-times"></i>
+            <i class="fas fa-bars"></i>
+        </button>
+    </section>
+</header>
+    <section class="main-home">
+        <section class="left-home">
+            <p class="title-home"> Make Free</p>
+            <p class="msg-home"> Portfolio maker helps you get hired at top companies</p>
+      <a href="portfolio.html" class="ctn-home">Make Your Portfolio</a>
+        </section>
+        <section class="right-home">
+            <img src="./images/homeimg.jpg" alt="resume image">
+
+        </section>
+
+    </section>
+
+
+
+
+ <script >
+    // togglehome page
+
+
+var menu = document.querySelector('.menu-home');
+var menubtn = document.querySelector('.menu-home button');
+menubtn.addEventListener('click',()=>{
+menu.classList.toggle('opened')
+})
+
+ </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login and register</title>
+    <link rel="stylesheet" href="css/loginstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+</head>
+<body>
+  <header class="headerhome" >
+    <h1>Portfolio maker</h1>
+    <section class="menu-home">
+        <ul class="menu-list-home">
+            <li class="active-home"> <a href="index.html">home </a></li>
+            <li id="loginbtn" onclick="login()" > <a href="Login.html">login </a></li>
+            <li id="registerbtn" onclick="register()"> <a href="register.html"> signup</a></li>
+        </ul>
+
+        <button>
+            <i class="fas fa-times"></i>
+            <i class="fas fa-bars"></i>
+        </button>
+    </section>
+</header>
+  <div class="wrapper">
+  <!-- formbox -->
+    <div class="form-box">
+      <!-- login -->
+    
+      <!-- signup -->
+      <div class="login-container" >
+        <div class="top">
+          <span>Have an Account?<a href="./Login.html">Login</a></span>
+          <header>Sign Up</header>
+        </div>
+   
+          <div class="input-box">
+            <input type="text" class="input-field" placeholder="email">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="input-box">
+            <input type="password" class="input-field" placeholder="password">
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <div class="input-box">
+            <input type="password" class="input-field" placeholder="repeat password">
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <div class="input-box">
+            <input type="submit" class="submit" placeholder="register">
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,438 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARED</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1">
+<link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+<link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+<link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+<link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+
+
+
+<link rel="stylesheet " href="css/style-switcher.css">
+
+<body>
+
+    <!-- main container -->
+    <div class="main-container">
+        <!-- aside start -->
+        <div class="aside">
+
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+                <li><a href="#services"><i class="fa fa-list"></i> Services</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i> contact </a></li>
+
+
+            </ul>
+        </div>
+        <!-- main content -->
+        <div class="main-content">
+            <!-- home section -->
+            <section class="home active section" id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info padd-15">
+
+                            <div class="section-title padd-15">
+                                <h2>
+                                    complete your information!
+                                </h2>
+                            </div>
+                            <form action="*" id="userform" class="userform">
+                                <div class="info">
+                                    <label for="name">your name: </label>
+                                    <input type="text" class="input-box" placeholder="Enter your name">
+                                </div>
+                                <div class="info">
+                                    <label for="img">Select image:</label>
+                                    <input type="file" name="images" id="images" required="required"
+                                        multiple="multiple" />
+                                </div>
+
+                                <div class="info">
+                                    <label for="skill">your skill title: </label>
+                                    <input type="text" class="input-box" placeholder="Enter your skill">
+                                </div>
+                                <div class="info">
+                                    <label for="skill">introduce yourself: </label>
+                                    <textarea rows="4" cols="50" name="comment" form="usrform"
+                                        class="description-box"> </textarea>
+                                </div>
+                            </form>
+
+                            <input type="submit" class="btn">
+                            <span class=""></span>
+
+
+                        </div>
+                    </div>
+            </section>
+            <!-- About section -->
+            <section class="about section" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>
+                                About me
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text">
+
+                                    <form action="*" id="userjob" class="userform">
+                                        <div class="info">
+                                            <label for="name">position/title : </label>
+                                            <input type="text" class="input-box"
+                                                placeholder="for example: backend developer">
+                                        </div>
+
+                                        <div class="info">
+                                            <label for="skill">Work Experience: </label>
+                                            <textarea rows="4" cols="50" name="comment" form="usrform"
+                                                class="description-box"> </textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="personal-info padd-15">
+                                    <div class="row padd-15">
+                                        <div class="info-item ">
+                                            <p>Birthday :
+                                                <input type="date" id="birthday" name="birthday">
+                                            </p>
+                                        </div>
+
+                                        <div class="info-item">
+                                            <p>Website : <input type="text" class="input-box"
+                                                    placeholder="www.example.com"></p>
+                                        </div>
+                                        <div class="info-item">
+                                            <p>Email : <input type="text" class="input-box"
+                                                    placeholder="example@example.com"></p>
+                                        </div>
+                                        <div class="info-item">
+                                            <p>Degree : <input type="text" class="input-box" placeholder="BA"></p>
+                                        </div>
+                                        <div class="info-item">
+                                            <p>Freelance : <input type="text" class="input-box" placeholder="Available / no,I'm employer"></p>
+
+                                          
+                                        </div>
+
+                                    </div>
+                                  
+                                </div>
+
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <div class="skill-item padd-15">  
+                                            <h5>your Skill</h5>
+                                            <input type="text" id="textInput" class="input-box" placeholder="Enter text">
+                                            <input type="number" id="percentInput" class="input-box" placeholder="for example: 80%">
+                                            <button id="addButton" class="btn">Add</button>
+                                            <ul id="displayText"></ul>
+                                          
+                                          
+
+                                        </div>
+                                      
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="education padd-15">
+                                    <h3 class="title">Education</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                             
+                                                    <form id="myForm">
+                                                        <label for="title">Title:</label>
+                                                        <input type="text" id="title" class="input-box" required placeholder=" your title Education">
+                                                        <br>
+                                                        <label for="startDate">Start Date:</label>
+                                                        <input type="date" class="input-box" id="startDate" required>
+                                                        <br>
+                                                        <label for="endDate">End Date:</label>
+                                                        <input class="input-box"t type="date" id="endDate" required>
+                                                        <br>
+                                                        <label for="description">Description:</label>
+                                                        <textarea id="description"  class="description-box" required></textarea>
+                                                        <br>
+                                                        <button type="button" class="btn " onclick="addEntry()">+</button>
+                                                      </form>
+                                                      
+                                                      <ul id="entriesList"></ul>
+
+                                                
+                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="experience padd-15">
+                                    <h3 class="title">Experience</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <form id="myForm">
+                                                    <label for="title">Title:</label>
+                                                    <input type="text" id="title" class="input-box" required placeholder=" your title Education">
+                                                    <br>
+                                                    <label for="startDate">Start Date:</label>
+                                                    <input type="date" class="input-box" id="startDate" required>
+                                                    <br>
+                                                    <label for="endDate">End Date:</label>
+                                                    <input class="input-box"t type="date" id="endDate" required>
+                                                    <br>
+                                                    <label for="description">Description:</label>
+                                                    <textarea id="description"  class="description-box" required></textarea>
+                                                    <br>
+                                                    <button type="button" class="btn " onclick="addEntry()">+</button>
+                                                  </form>
+                                                  
+                                                  <ul id="entriesList"></ul>
+
+                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row padd-15">
+                                <div class="buttons ">
+                                    <input type="submit" class="btn hire-me" value="Submit">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Service sevtion -->
+            <section class="Service section" id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Services</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-mobile-alt"></i>
+                                </div>
+                                <h4>Web Developer</h4>
+                                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi quis maxime ea ad
+                                    ipsa
+                                    voluptates rem sit ducimus, mollitia animi architecto eum odit ipsum excepturi ab
+                                    nihil?
+                                    Aliquid, atque illo!</P>
+                            </div>
+                        </div>
+
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-laptop-code"></i>
+                                </div>
+                                <h4>Web Developer</h4>
+                                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi quis maxime ea ad
+                                    ipsa
+                                    voluptates rem sit ducimus, mollitia animi architecto eum odit ipsum excepturi ab
+                                    nihil?
+                                    Aliquid, atque illo!</P>
+                            </div>
+                        </div>
+
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-palette"></i>
+                                </div>
+                                <h4>Web Developer</h4>
+                                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi quis maxime ea ad
+                                    ipsa
+                                    voluptates rem sit ducimus, mollitia animi architecto eum odit ipsum excepturi ab
+                                    nihil?
+                                    Aliquid, atque illo!</P>
+                            </div>
+                        </div>
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-code"></i>
+                                </div>
+                                <h4>Web Developer</h4>
+                                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi quis maxime ea ad
+                                    ipsa
+                                    voluptates rem sit ducimus, mollitia animi architecto eum odit ipsum excepturi ab
+                                    nihil?
+                                    Aliquid, atque illo!</P>
+                            </div>
+                        </div>
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <h4>Web Developer</h4>
+                                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi quis maxime ea ad
+                                    ipsa
+                                    voluptates rem sit ducimus, mollitia animi architecto eum odit ipsum excepturi ab
+                                    nihil?
+                                    Aliquid, atque illo!</P>
+                            </div>
+                        </div>
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-bullhorn"></i>
+                                </div>
+                                <h4>Web Developer</h4>
+                                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi quis maxime ea ad
+                                    ipsa
+                                    voluptates rem sit ducimus, mollitia animi architecto eum odit ipsum excepturi ab
+                                    nihil?
+                                    Aliquid, atque illo!</P>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- protfolio section -->
+            <section class="portfolio section" id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>portfolio</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h2>My Last Projects :</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                       
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <form id="portfolioform" class="userform">
+                                    <div class="info">
+                                        <label for="name">url: </label>
+                                        <input type="url" id="url" class="input-box" name="url"  placeholder="https://example.com"  required />
+                                    </div>
+                                    <div class="info">
+                                        <label for="img">Select image:</label>
+                                        <input type="file" id="img" accept="image/*" multiple="multiple" required>
+                                    </div>
+                                    <button type="button" class="btn " onclick="addEntryProject()">Add</button>
+
+                                    </form>
+                                    <ul id="entriesListproject"></ul>
+                                </div>
+                                
+                        </div>
+ <div class="row padd-15">
+                            <div class="buttons ">
+                                <input type="submit" class="btn hire-me" value="Submit">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- contact section -->
+            <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
+                    <h3 class="contact-title padd-15">Have You Any Question?</h3>
+                    <h4 class="contact-sub-title padd-15">I'm at your service</h4>
+                    <div class="row">
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"> <i class="fa fa-phone"></i></div>
+                            <h4>Call Us On</h4>
+                            <input type="text" class="input-box"
+                            placeholder="+98 123456789">
+                        </div>
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"> <i class="fa fa-map-marker-alt"></i></div>
+                            <h4>office</h4>
+                            <input type="text" class="input-box"
+                                                    placeholder="location">
+                        </div>
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"> <i class="fa fa-envelope"></i></div>
+                            <h4>Email </h4>
+                            <input type="text" class="input-box"
+                                                    placeholder="example@example.com">
+                        </div>
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"> <i class="fa fa-globe-europe"></i></div>
+                            <h4>Website</h4>
+                            <input type="text" class="input-box"
+                                                    placeholder="www.example.com">
+                        </div>
+                    </div>
+                 
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- sWITCHER -->
+    <div class="style-switcher ">
+        <div class="style-switcher-toggler  s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas "></i>
+        </div>
+        <h4>Theme colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"
+        integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+    <script src="js/Style-switcher.js"></script>
+
+</body>
+
+</html>
